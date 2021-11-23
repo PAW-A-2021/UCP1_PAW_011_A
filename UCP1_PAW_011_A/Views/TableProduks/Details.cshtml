@@ -1,0 +1,30 @@
+﻿@model UCP1_PAW_011_A.Models.TableProduk
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TableProduk</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NamaProduk)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NamaProduk)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.QuantityProduk)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuantityProduk)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdProduk">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
